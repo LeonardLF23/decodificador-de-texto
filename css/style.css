@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.figure {
+  display: flex;
+  background-color: rgb(13, 88, 150);
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.title {
+  display: inline-flex;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-left: 1rem;
+  padding-right: .5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #79ccec;
+}
+
+.texto {
+  position: absolute;
+  border-radius: 8px;
+}
+
+.texto {
+  position: absolute;
+  width: 42%;
+  height: 60%;
+  left: 12%;
+  top: 15%;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  background-color: #f3f5fc;
+}
+
+.texto::placeholder {
+  color:  rgb(13, 88, 150);
+}
+
+.texto:focus,
+.texto:active {
+  border: none;
+  outline: none;
+}
+
+.termos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 80%;
+}
+
+.termos p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgb(13, 88, 150);;
+  opacity: 0.8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1% 0;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 82%;
+}
+
+.btn-criptografar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background-color:  rgb(44, 139, 228);
+  border-radius: 24px;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+}
+
+.btn-Descriptografar,
+.btn-copiar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background: #d8dfe8;
+  border: 1px solid  rgb(44, 139, 228);
+  border-radius: 24px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color:  rgb(44, 139, 228);
+}
+
+.btn-Descriptografar:hover,
+.btn-criptografar:hover,
+.btn-copiar:hover {
+  margin: 0.3%;
+  width: 24.5%;
+  padding: 1.8%;
+}
+
+.criptografado {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  left: 60%;
+  top: 5%;
+  background: #fff;
+  box-shadow: 0px 24px 32px -8px rgb(13, 88, 150);
+  border-radius: 32px;
+}
+
+.mensagem-criptografada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  text-align: center;
+}
+
+.mensagem-criptografada h2 {
+  width: 60%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: rgb(13, 88, 150);
+}
+
+.mensagem-criptografada p {
+  width: 80%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: rgb(13, 88, 150);
+}
+
+.criptografado img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 15%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+/* Design responsivo */
+@media (max-width: 57.5em) 
+
+.cabecalho {
+  display: flex;
+  justify-content: left;
+  padding: 3%;
+}
+
+{
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .criptografado {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .mensagem-criptografada {
+    width: 100%;
+    top: 5%;
+  }
+  .criptografado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.footer {
+  color: var(--cortitulo);
+}
+
+
+  
