@@ -1,5 +1,7 @@
 # Desafio da Alura de Criptografia de Textos 😊
 
+Gitpage do projeto: https://leonardlf23.github.io/decodificador-de-texto
+
 Este desafio tem como objetivo criar uma aplicação na web para criptografar e descriptografar textos com regras e regulamentos específicos.
 
 ## Funções
